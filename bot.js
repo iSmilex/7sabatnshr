@@ -1,6 +1,26 @@
 const Discord = require('discord.js');
-const one = new Discord.Client();
-console.log("Welcome");
+const client = new Discord.Client();
+
+console.log("Welcome Again !");
+
+client.on('ready', () => {
+  client.user.setGame(`Dynasty Server.`,"http://twitch.tv/S-F")
+  console.log('╔[════════════════════════════════════]╗');
+  console.log('')
+  console.log('            ╔[════════════]╗')
+  console.log('              Bot Is Online')
+  console.log('            ╚[════════════]╝')
+  console.log('')
+  console.log(`Logged in as ${client.user.tag}!`);
+  console.log('')
+  console.log(`servers! [ " ${client.guilds.size} " ]`);
+  console.log('')
+  console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log('')
+  console.log('╚[════════════════════════════════════]╝')
+});
+
+
  client.on("guildMemberRemove", member => {
   member.createDM().then(function (channel) {
   return channel.send(`
@@ -9,8 +29,7 @@ console.log("Welcome");
 - كرسي الإعترآف
 - أسرع كتآبة
 - فكك
-** الرآبط :link: : https://discord.gg/J9srXnG **
-`)
+** الرآبط :link: : https://discord.gg/J9srXnG **`)
 }).catch(console.error)
 
 })
@@ -27,7 +46,4 @@ client.on("guildMemberAdd", member => {
 `) 
 }).catch(console.error)
 })
-
-
-
-one.login("NDgyMjY5NjEyNDYxOTE2MTYy.DmCfPw.i31uJUkLD0E6u-yLT55SHJm6P1Y");
+client.login('NDgyMjY5NjEyNDYxOTE2MTYy.DmCfPw.i31uJUkLD0E6u-yLT55SHJm6P1Y');

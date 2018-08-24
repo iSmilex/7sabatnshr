@@ -29,7 +29,7 @@ client.on('ready', () => {
 - كرسي الإعترآف
 - أسرع كتآبة
 - فكك
-** الرآبط :link: : https://discord.gg/J9srXnG **`)
+** الرآبط :link: : https://discord.gg/mCcR2Rb **`)
 }).catch(console.error)
 
 })
@@ -42,7 +42,7 @@ client.on("guildMemberAdd", member => {
 - كرسي الإعترآف
 - أسرع كتآبة
 - فكك
-** الرآبط :link: : https://discord.gg/J9srXnG **
+** الرآبط :link: : https://discord.gg/mCcR2Rb **
 `) 
 }).catch(console.error)
 })
